@@ -1,0 +1,2 @@
+ar_tag_toolbox:ar_track_alvar/ar_track_alvar:ar_track_alvar/ar_track_alvar_msgs:get_ar_pos:sad:usb_cam
+-DCATKIN_DEVEL_PREFIX=/home/germinator/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/germinator/catkin_ws/install -G Unix Makefiles

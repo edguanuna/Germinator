@@ -1,0 +1,30 @@
+AR Tags are Printable from PNG
+For calibration you need to print out a checkboard just look up ar_track_alvar calibration or it miggt be linked in meow
+meow.txt has a bunch of random things I used in somewhat order
+Steps After Calibrating
+The calibration yaml should automatically be moved into .ros
+
+roscore
+catkin_make
+source devel/setup.bash
+roslaunch sad run_cam.launch
+    (might get a weird failed invalid argument "shouldnt matter")
+roslaunch sad ar_track.launch 
+
+At this point should be able to run rviz and just follow same steps as lab
+rostopic list and rqt_graph are pretty cool
+rosrun tf2_tools view_frames.py lets you see TF but you can also see them in RVIZ
+
+rosrun get_ar_pos ar_tag_pos_publisher.py 
+    AlvarMarkers you can look up its just messages and they contain the different AR Markers sotred as markers which then have their own posees etc just look it up online
+    You can ignore the whole meow function its what's causing it to break below
+    
+rosrun get_ar_pos tf_ar_tags.py 
+    (this just gives distances from each other
+        -hardcoded for now cause idk how to call it in the top without hardcoding)
+        
+This whole TF frame only matters rn b/c of the AR Tags. We have their x,y,z and everything relative to the camera but we want everything in terms of some "car" ar tag(can literally be any of the 4 etc)
+     
+Next Steps: Figure out how to get it in terms of TF and make sure it subscribes/publishes idk and then path plannings
+
+

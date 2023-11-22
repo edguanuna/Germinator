@@ -1,0 +1,8 @@
+prefix=/home/germinator/catkin_ws/install
+
+Name: get_ar_pos
+Description: Description of get_ar_pos
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
