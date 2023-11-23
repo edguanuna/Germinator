@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/lib/usb_cam/usb_cam_node"
-  "/home/germinator/catkin_ws/devel/lib/usb_cam/usb_cam_node.pdb"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/usb_cam/usb_cam_node"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/usb_cam/usb_cam_node.pdb"
   "CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/lib/libar_track_alvar.pdb"
-  "/home/germinator/catkin_ws/devel/lib/libar_track_alvar.so"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/libar_track_alvar.pdb"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/libar_track_alvar.so"
   "CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o"
   "CMakeFiles/ar_track_alvar.dir/src/Camera.cpp.o"
   "CMakeFiles/ar_track_alvar.dir/src/CaptureDevice.cpp.o"

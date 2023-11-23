@@ -1,8 +1,8 @@
-# Install script for directory: /home/germinator/catkin_ws/src/sad
+# Install script for directory: /home/germinator/Germinator/catkin_ws/src/sad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/germinator/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/germinator/Germinator/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad/srv" TYPE FILE FILES "/home/germinator/catkin_ws/src/sad/srv/ImageSrv.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad/srv" TYPE FILE FILES "/home/germinator/Germinator/catkin_ws/src/sad/srv/ImageSrv.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad/cmake" TYPE FILE FILES "/home/germinator/catkin_ws/build/sad/catkin_generated/installspace/sad-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad/cmake" TYPE FILE FILES "/home/germinator/Germinator/catkin_ws/build/sad/catkin_generated/installspace/sad-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/germinator/catkin_ws/devel/include/sad")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/germinator/Germinator/catkin_ws/devel/include/sad")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/germinator/catkin_ws/devel/share/roseus/ros/sad")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/germinator/Germinator/catkin_ws/devel/share/roseus/ros/sad")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/germinator/catkin_ws/devel/share/common-lisp/ros/sad")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/germinator/Germinator/catkin_ws/devel/share/common-lisp/ros/sad")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/germinator/catkin_ws/devel/share/gennodejs/ros/sad")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/germinator/Germinator/catkin_ws/devel/share/gennodejs/ros/sad")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/germinator/catkin_ws/devel/lib/python3/dist-packages/sad")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/germinator/Germinator/catkin_ws/devel/lib/python3/dist-packages/sad")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/germinator/catkin_ws/devel/lib/python3/dist-packages/sad")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/germinator/Germinator/catkin_ws/devel/lib/python3/dist-packages/sad")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/germinator/catkin_ws/build/sad/catkin_generated/installspace/sad.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/germinator/Germinator/catkin_ws/build/sad/catkin_generated/installspace/sad.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad/cmake" TYPE FILE FILES "/home/germinator/catkin_ws/build/sad/catkin_generated/installspace/sad-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad/cmake" TYPE FILE FILES "/home/germinator/Germinator/catkin_ws/build/sad/catkin_generated/installspace/sad-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad/cmake" TYPE FILE FILES
-    "/home/germinator/catkin_ws/build/sad/catkin_generated/installspace/sadConfig.cmake"
-    "/home/germinator/catkin_ws/build/sad/catkin_generated/installspace/sadConfig-version.cmake"
+    "/home/germinator/Germinator/catkin_ws/build/sad/catkin_generated/installspace/sadConfig.cmake"
+    "/home/germinator/Germinator/catkin_ws/build/sad/catkin_generated/installspace/sadConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad" TYPE FILE FILES "/home/germinator/catkin_ws/src/sad/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sad" TYPE FILE FILES "/home/germinator/Germinator/catkin_ws/src/sad/package.xml")
 endif()
 

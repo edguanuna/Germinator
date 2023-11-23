@@ -67,14 +67,14 @@ set(sad_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(sad_SOURCE_PREFIX /home/germinator/catkin_ws/src/sad)
-  set(sad_DEVEL_PREFIX /home/germinator/catkin_ws/devel)
+  set(sad_SOURCE_PREFIX /home/germinator/Germinator/catkin_ws/src/sad)
+  set(sad_DEVEL_PREFIX /home/germinator/Germinator/catkin_ws/devel)
   set(sad_INSTALL_PREFIX "")
   set(sad_PREFIX ${sad_DEVEL_PREFIX})
 else()
   set(sad_SOURCE_PREFIX "")
   set(sad_DEVEL_PREFIX "")
-  set(sad_INSTALL_PREFIX /home/germinator/catkin_ws/install)
+  set(sad_INSTALL_PREFIX /home/germinator/Germinator/catkin_ws/install)
   set(sad_PREFIX ${sad_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/germinator/catkin_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/germinator/Germinator/catkin_ws/install/lib;/home/germinator/Germinator/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

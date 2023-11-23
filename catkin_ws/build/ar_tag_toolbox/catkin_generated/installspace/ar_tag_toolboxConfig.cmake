@@ -67,14 +67,14 @@ set(ar_tag_toolbox_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ar_tag_toolbox_SOURCE_PREFIX /home/germinator/catkin_ws/src/ar_tag_toolbox)
-  set(ar_tag_toolbox_DEVEL_PREFIX /home/germinator/catkin_ws/devel)
+  set(ar_tag_toolbox_SOURCE_PREFIX /home/germinator/Germinator/catkin_ws/src/ar_tag_toolbox)
+  set(ar_tag_toolbox_DEVEL_PREFIX /home/germinator/Germinator/catkin_ws/devel)
   set(ar_tag_toolbox_INSTALL_PREFIX "")
   set(ar_tag_toolbox_PREFIX ${ar_tag_toolbox_DEVEL_PREFIX})
 else()
   set(ar_tag_toolbox_SOURCE_PREFIX "")
   set(ar_tag_toolbox_DEVEL_PREFIX "")
-  set(ar_tag_toolbox_INSTALL_PREFIX /home/germinator/catkin_ws/install)
+  set(ar_tag_toolbox_INSTALL_PREFIX /home/germinator/Germinator/catkin_ws/install)
   set(ar_tag_toolbox_PREFIX ${ar_tag_toolbox_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/germinator/catkin_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/germinator/Germinator/catkin_ws/install/lib;/home/germinator/Germinator/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

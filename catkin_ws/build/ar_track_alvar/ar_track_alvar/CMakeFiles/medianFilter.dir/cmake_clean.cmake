@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/lib/libmedianFilter.pdb"
-  "/home/germinator/catkin_ws/devel/lib/libmedianFilter.so"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/libmedianFilter.pdb"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/libmedianFilter.so"
   "CMakeFiles/medianFilter.dir/src/medianFilter.cpp.o"
 )
 

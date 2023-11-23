@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/include/ar_track_alvar/ParamsConfig.h"
-  "/home/germinator/catkin_ws/devel/lib/python3/dist-packages/ar_track_alvar/cfg/ParamsConfig.py"
-  "/home/germinator/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig-usage.dox"
-  "/home/germinator/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig.dox"
-  "/home/germinator/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig.wikidoc"
+  "/home/germinator/Germinator/catkin_ws/devel/include/ar_track_alvar/ParamsConfig.h"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/python3/dist-packages/ar_track_alvar/cfg/ParamsConfig.py"
+  "/home/germinator/Germinator/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig-usage.dox"
+  "/home/germinator/Germinator/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig.dox"
+  "/home/germinator/Germinator/catkin_ws/devel/share/ar_track_alvar/docs/ParamsConfig.wikidoc"
   "CMakeFiles/ar_track_alvar_gencfg"
 )
 

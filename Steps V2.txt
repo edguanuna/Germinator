@@ -1,0 +1,34 @@
+roscore
+catkin clean
+catkin_make
+source devel/setup.bash
+roslaunch sad run_cam.launch
+
+source devel/setup.bash
+roslaunch sad ar_track.launch 
+
+RVIZ
+    Add image
+    Add camera
+    Fixed_frame: cam_name
+    Add TF
+
+#This is where everything new happens gets transforms pretty easy to read I
+made it publish x,y,z Points so you can work on path planning only 1 issue described
+below. I used ar_tag_1 as the car frame so moving stuff so everything is in terms of distance to that#
+
+source devel/setup.bash
+rosrun get_ar_pos ar_detector.py 
+
+
+#So this is just a subscriber that subscribes to get_ar_pos only issue is that that
+I have everything as rospy.spin() so it's jsut continously recieving stuff and this 
+is also on rospy.spin() IDK how to use "rates" and "spin" and "sleep" I tried a few
+stuff that didn't work. Publishing nodes are constantly publishing i think soo shrug
+Try and see if you can figure this out maybe even ask on ED you'll see what I mean. Give
+it like an hour and if not get started on path planning and you can make some static xyz points by placing down AR_TAGS and copying the info. Lab 8 was really helpful# 
+
+source devel/setup.bash
+rosrun path_planning path_planner.py
+
+M

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/lib/ar_track_alvar/createMarker"
-  "/home/germinator/catkin_ws/devel/lib/ar_track_alvar/createMarker.pdb"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/ar_track_alvar/createMarker"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/ar_track_alvar/createMarker.pdb"
   "CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o"
 )
 

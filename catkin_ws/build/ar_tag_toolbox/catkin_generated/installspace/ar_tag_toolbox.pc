@@ -1,4 +1,4 @@
-prefix=/home/germinator/catkin_ws/install
+prefix=/home/germinator/Germinator/catkin_ws/install
 
 Name: ar_tag_toolbox
 Description: Description of ar_tag_toolbox

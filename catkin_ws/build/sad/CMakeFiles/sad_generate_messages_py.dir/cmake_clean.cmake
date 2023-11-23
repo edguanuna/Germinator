@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/lib/python3/dist-packages/sad/srv/_ImageSrv.py"
-  "/home/germinator/catkin_ws/devel/lib/python3/dist-packages/sad/srv/__init__.py"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/python3/dist-packages/sad/srv/_ImageSrv.py"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/python3/dist-packages/sad/srv/__init__.py"
   "CMakeFiles/sad_generate_messages_py"
 )
 

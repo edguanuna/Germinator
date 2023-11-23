@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/germinator/catkin_ws/src/sad/srv/ImageSrv.srv"
+services_str = "/home/germinator/Germinator/catkin_ws/src/sad/srv/ImageSrv.srv"
 pkg_name = "sad"
 dependencies_str = "sensor_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

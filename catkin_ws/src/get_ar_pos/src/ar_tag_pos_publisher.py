@@ -2,15 +2,17 @@
 import rospy
 import tf2_ros
 from ar_track_alvar_msgs.msg import AlvarMarkers
+from ar_track_alvar_msgs.msg import AlvarMarker
 
 def callback(data):
-    
+
     for marker in data.markers:
+        rospy.loginfo("Received message of type: %s", type(data.markers[0]))
         pose = marker.pose
-        print(f"Ar Tag ID: {marker.id}")
-        print(f"Position: {pose.pose.position}")
-        print(f"Orientation: {pose.pose.orientation}")
-        meow(marker)
+        #print(f"Ar Tag ID: {marker.id}")
+        #print(f"Position: {pose.pose.position}")
+        #print(f"Orientation: {pose.pose.orientation}")
+        print(marker)
         print("----")
 #I want put all frames in term of the "car" frame but it's not working the oiher file does work for that
 def meow(marker):

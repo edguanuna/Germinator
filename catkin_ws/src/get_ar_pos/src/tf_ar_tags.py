@@ -3,6 +3,13 @@ import tf2_ros
 import sys
 import rospy
 
+
+
+
+
+#Gives distances between points
+
+
 def listener():
     tfBuffer = tf2_ros.Buffer()
     tfListener = tf2_ros.TransformListener(tfBuffer)

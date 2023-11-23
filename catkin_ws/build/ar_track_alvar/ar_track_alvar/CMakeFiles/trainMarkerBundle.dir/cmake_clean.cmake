@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle"
-  "/home/germinator/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle.pdb"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle"
+  "/home/germinator/Germinator/catkin_ws/devel/lib/ar_track_alvar/trainMarkerBundle.pdb"
   "CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o"
 )
 

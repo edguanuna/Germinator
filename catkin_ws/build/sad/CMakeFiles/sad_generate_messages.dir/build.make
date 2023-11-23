@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/germinator/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/germinator/Germinator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/germinator/catkin_ws/build
+CMAKE_BINARY_DIR = /home/germinator/Germinator/catkin_ws/build
 
 # Utility rule file for sad_generate_messages.
 
@@ -63,10 +63,10 @@ sad/CMakeFiles/sad_generate_messages.dir/build: sad_generate_messages
 .PHONY : sad/CMakeFiles/sad_generate_messages.dir/build
 
 sad/CMakeFiles/sad_generate_messages.dir/clean:
-	cd /home/germinator/catkin_ws/build/sad && $(CMAKE_COMMAND) -P CMakeFiles/sad_generate_messages.dir/cmake_clean.cmake
+	cd /home/germinator/Germinator/catkin_ws/build/sad && $(CMAKE_COMMAND) -P CMakeFiles/sad_generate_messages.dir/cmake_clean.cmake
 .PHONY : sad/CMakeFiles/sad_generate_messages.dir/clean
 
 sad/CMakeFiles/sad_generate_messages.dir/depend:
-	cd /home/germinator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/germinator/catkin_ws/src /home/germinator/catkin_ws/src/sad /home/germinator/catkin_ws/build /home/germinator/catkin_ws/build/sad /home/germinator/catkin_ws/build/sad/CMakeFiles/sad_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/germinator/Germinator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/germinator/Germinator/catkin_ws/src /home/germinator/Germinator/catkin_ws/src/sad /home/germinator/Germinator/catkin_ws/build /home/germinator/Germinator/catkin_ws/build/sad /home/germinator/Germinator/catkin_ws/build/sad/CMakeFiles/sad_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sad/CMakeFiles/sad_generate_messages.dir/depend
 

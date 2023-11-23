@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DBOOST_BIND_GLOBAL_PLACEHOLDERS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"usb_cam\" -Dv4l_driver_EXPORTS
 
-CXX_INCLUDES = -I/home/germinator/catkin_ws/src/usb_cam/include -isystem /usr/include/opencv4 
+CXX_INCLUDES = -I/home/germinator/Germinator/catkin_ws/src/usb_cam/include -isystem /usr/include/opencv4 
 

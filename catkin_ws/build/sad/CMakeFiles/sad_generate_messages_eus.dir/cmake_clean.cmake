@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/catkin_ws/devel/share/roseus/ros/sad/manifest.l"
-  "/home/germinator/catkin_ws/devel/share/roseus/ros/sad/srv/ImageSrv.l"
+  "/home/germinator/Germinator/catkin_ws/devel/share/roseus/ros/sad/manifest.l"
+  "/home/germinator/Germinator/catkin_ws/devel/share/roseus/ros/sad/srv/ImageSrv.l"
   "CMakeFiles/sad_generate_messages_eus"
 )
 

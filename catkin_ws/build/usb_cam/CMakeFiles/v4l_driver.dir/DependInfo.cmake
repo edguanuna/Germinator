@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/germinator/catkin_ws/src/usb_cam/src/camera_driver.cpp" "/home/germinator/catkin_ws/build/usb_cam/CMakeFiles/v4l_driver.dir/src/camera_driver.cpp.o"
-  "/home/germinator/catkin_ws/src/usb_cam/src/converters.cpp" "/home/germinator/catkin_ws/build/usb_cam/CMakeFiles/v4l_driver.dir/src/converters.cpp.o"
-  "/home/germinator/catkin_ws/src/usb_cam/src/util.cpp" "/home/germinator/catkin_ws/build/usb_cam/CMakeFiles/v4l_driver.dir/src/util.cpp.o"
+  "/home/germinator/Germinator/catkin_ws/src/usb_cam/src/camera_driver.cpp" "/home/germinator/Germinator/catkin_ws/build/usb_cam/CMakeFiles/v4l_driver.dir/src/camera_driver.cpp.o"
+  "/home/germinator/Germinator/catkin_ws/src/usb_cam/src/converters.cpp" "/home/germinator/Germinator/catkin_ws/build/usb_cam/CMakeFiles/v4l_driver.dir/src/converters.cpp.o"
+  "/home/germinator/Germinator/catkin_ws/src/usb_cam/src/util.cpp" "/home/germinator/Germinator/catkin_ws/build/usb_cam/CMakeFiles/v4l_driver.dir/src/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/germinator/catkin_ws/src/usb_cam/include"
+  "/home/germinator/Germinator/catkin_ws/src/usb_cam/include"
   "/usr/include/opencv4"
   )
 
