@@ -86,10 +86,52 @@ def get_trajectory(targets, interval):
         temp_trajectory = generate_bezier_waypoints(at_point[0], at_point[1], at_point_yaw, next_point[0], next_point[1], next_point_yaw, offset=0.15, num_points=interval)
         trajectory += temp_trajectory
     return trajectory
+
+    # TSP w/ NEAREST NEIGHBORS !!
+def distance(point1, point2):
+    """Calculate the Euclidean distance between two points."""
+    return np.linalg.norm(np.array(point1) - np.array(point2))
+
+def nearest_neighbor(current_node, unvisited_nodes):
+    """Find the nearest neighbor to the current node from the unvisited nodes."""
+    min_distance = float('inf')
+    nearest_node = None
+
+    for node in unvisited_nodes:
+        dist = distance(current_node, node)
+        if dist < min_distance:
+            min_distance = dist
+            nearest_node = node
+
+    return nearest_node
+
+def nearest_neighbor_tsp(coordinates):
+    """Solve the traveling salesperson problem using the nearest neighbor algorithm."""
+    start_node = coordinates[0]
+    unvisited_nodes = set(coordinates[1:])  # Set of unvisited nodes
+    current_node = start_node
+    tsp_path = [start_node]
+
+    while unvisited_nodes:
+        nearest = nearest_neighbor(current_node, unvisited_nodes)
+        tsp_path.append(nearest)
+        current_node = nearest
+        unvisited_nodes.remove(nearest)
+
+    tsp_path.append(start_node)  # Return to the starting node to complete the cycle
+
+    return tsp_path
+
+
 if __name__ == '__main__':
     
     targets = [(0.0,0.0), (0.2, 0.2), (0.4, 0.4), (0.6,0.1),(0.0,0.0)]
+
+    tsp_path = nearest_neighbor_tsp(targets)
+    print("Nearest Neighbor TSP Path:", tsp_path)
+
     interval = 50
+    # trajectory = get_trajectory(tsp_path, interval)
     trajectory = get_trajectory(targets, interval)
     
     
