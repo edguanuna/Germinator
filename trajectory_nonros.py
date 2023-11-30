@@ -125,14 +125,14 @@ def nearest_neighbor_tsp(coordinates):
 
 if __name__ == '__main__':
     
-    targets = [(0.0,0.0), (0.2, 0.2), (0.4, 0.4), (0.6,0.1),(0.0,0.0)]
+    targets = [(0.0,0.0), (-.5,.6), (0.2, 0.2), (0.4, 0.4), (0.6,0.1), (1.5, .9)]
 
     tsp_path = nearest_neighbor_tsp(targets)
     print("Nearest Neighbor TSP Path:", tsp_path)
 
     interval = 50
     # trajectory = get_trajectory(tsp_path, interval)
-    trajectory = get_trajectory(targets, interval)
+    trajectory = get_trajectory(tsp_path, interval)
     
     
     plot_trajectory(trajectory, interval)

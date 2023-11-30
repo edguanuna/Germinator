@@ -3,9 +3,11 @@ catkin clean
 catkin_make
 source devel/setup.bash
 roslaunch sad run_cam.launch
+ls -ltrh /dev/video*
 
 source devel/setup.bash
 roslaunch sad ar_track.launch 
+
 
 RVIZ
     Add image

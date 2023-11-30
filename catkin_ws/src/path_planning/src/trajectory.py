@@ -73,7 +73,7 @@ def generate_yaw_from_targets(initial_yaw, targets):
         dy = next_point[1] - at_point[1]
         yaw_of_targets.append(np.arctan2(dy, dx))
     yaw_of_targets.append(initial_yaw)
-    print(yaw_of_targets)
+    #print(yaw_of_targets)
     return yaw_of_targets
     
 def get_trajectory(targets, interval):
@@ -87,7 +87,9 @@ def get_trajectory(targets, interval):
         next_point_yaw = yaw_of_targets[desired_point + 1]
         temp_trajectory = generate_bezier_waypoints(at_point[0], at_point[1], at_point_yaw, next_point[0], next_point[1], next_point_yaw, offset=0.15, num_points=interval)
         trajectory += temp_trajectory
+    #plot_trajectory(trajectory, interval)    
     return trajectory
+    
 def plan_curved_trajectory(target_position):
     """
     Plan a curved trajectory for a Roomba-type robot from current_position to target_position using a Bezier curve.
@@ -128,9 +130,9 @@ if __name__ == '__main__':
     # trajectory = plan_curved_trajectory()
     
         
-    targets = [(0.0,0.0), (0.2, 0.2), (0.4, 0.4), (0.6,0.1),(0.0,0.0)]
-    interval = 50
-    trajectory = get_trajectory(targets, interval)
+    #targets = [(0.0,0.0), (0.21, 0.15), (0.61, 0.20), (0.40, -0.11), (0.0,0.0)]
+    #interval = 100
+    #trajectory = get_trajectory(targets, interval)
     
     
-    plot_trajectory(trajectory, interval)
+    #plot_trajectory(trajectory, interval)

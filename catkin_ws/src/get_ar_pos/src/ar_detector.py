@@ -21,9 +21,6 @@ class ARDetector:
         rospy.init_node('ar_detector', anonymous=True)
 
         self.markers = []
-        
-        rospy.Subscriber('/ar_pose_marker', AlvarMarkers, self.get_markers_callback)
-
 
         self.tfBuffer = tf2_ros.Buffer() 
         self.tfListener = tf2_ros.TransformListener(self.tfBuffer)
@@ -33,15 +30,22 @@ class ARDetector:
         
         
         
-        rospy.spin()
+        self.rate = rospy.Rate(1)
         
+        while not rospy.is_shutdown():
+            self.get_markers_callback()  # Call the callback in the loop
+            self.rate.sleep() 
         
 
-    def get_markers_callback(self, msg):
+    def get_markers_callback(self):
         # Returns an Array of AR Markers
-        self.markers = msg.markers
-        self.generate_tf()
-        
+        try:
+            markers_msg = rospy.wait_for_message('/ar_pose_marker', AlvarMarkers, timeout=1.0)
+            self.markers = markers_msg.markers
+            self.generate_tf()
+        except rospy.ROSException as e:
+            print("ROS Error: " + str(e))
+
    
     def generate_tf(self):
         if self.markers:
@@ -67,6 +71,7 @@ class ARDetector:
                     print("TF Error: " + str(e))
                     return
             self.point_pub.publish(self.points)
+            self.points = PointArray()
             
 if __name__ == '__main__':
     ARDetector()
