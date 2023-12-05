@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/germinator/Germinator/catkin_ws/devel/share/common-lisp/ros/sad/srv/ImageSrv.lisp"
+  "/home/germinator/Downloads/Germinator/catkin_ws/devel/share/common-lisp/ros/sad/srv/ImageSrv.lisp"
   "CMakeFiles/sad_generate_messages_lisp"
 )
 

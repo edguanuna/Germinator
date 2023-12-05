@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/germinator/Germinator/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/germinator/Downloads/Germinator/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/germinator/Germinator/catkin_ws/build
+CMAKE_BINARY_DIR = /home/germinator/Downloads/Germinator/catkin_ws/build
 
 # Utility rule file for sad_gennodejs.
 
@@ -63,10 +63,10 @@ sad/CMakeFiles/sad_gennodejs.dir/build: sad_gennodejs
 .PHONY : sad/CMakeFiles/sad_gennodejs.dir/build
 
 sad/CMakeFiles/sad_gennodejs.dir/clean:
-	cd /home/germinator/Germinator/catkin_ws/build/sad && $(CMAKE_COMMAND) -P CMakeFiles/sad_gennodejs.dir/cmake_clean.cmake
+	cd /home/germinator/Downloads/Germinator/catkin_ws/build/sad && $(CMAKE_COMMAND) -P CMakeFiles/sad_gennodejs.dir/cmake_clean.cmake
 .PHONY : sad/CMakeFiles/sad_gennodejs.dir/clean
 
 sad/CMakeFiles/sad_gennodejs.dir/depend:
-	cd /home/germinator/Germinator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/germinator/Germinator/catkin_ws/src /home/germinator/Germinator/catkin_ws/src/sad /home/germinator/Germinator/catkin_ws/build /home/germinator/Germinator/catkin_ws/build/sad /home/germinator/Germinator/catkin_ws/build/sad/CMakeFiles/sad_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/germinator/Downloads/Germinator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/germinator/Downloads/Germinator/catkin_ws/src /home/germinator/Downloads/Germinator/catkin_ws/src/sad /home/germinator/Downloads/Germinator/catkin_ws/build /home/germinator/Downloads/Germinator/catkin_ws/build/sad /home/germinator/Downloads/Germinator/catkin_ws/build/sad/CMakeFiles/sad_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sad/CMakeFiles/sad_gennodejs.dir/depend
 

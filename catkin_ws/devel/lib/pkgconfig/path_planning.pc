@@ -1,4 +1,4 @@
-prefix=/home/germinator/Germinator/catkin_ws/devel
+prefix=/home/germinator/Downloads/Germinator/catkin_ws/devel
 
 Name: path_planning
 Description: Description of path_planning

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/germinator/Germinator/catkin_ws/devel/include/sad/ImageSrv.h"
+  "/home/germinator/Downloads/Germinator/catkin_ws/devel/include/sad/ImageSrv.h"
   "CMakeFiles/sad_generate_messages_cpp"
 )
 

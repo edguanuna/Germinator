@@ -1,4 +1,4 @@
-prefix=/home/germinator/Germinator/catkin_ws/install
+prefix=/home/germinator/Downloads/Germinator/catkin_ws/install
 
 Name: get_ar_pos
 Description: Description of get_ar_pos

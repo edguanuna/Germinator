@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/germinator/Germinator/catkin_ws/devel/lib/python3/dist-packages/get_ar_pos/msg/_PointArray.py"
-  "/home/germinator/Germinator/catkin_ws/devel/lib/python3/dist-packages/get_ar_pos/msg/__init__.py"
+  "/home/germinator/Downloads/Germinator/catkin_ws/devel/lib/python3/dist-packages/get_ar_pos/msg/_PointArray.py"
+  "/home/germinator/Downloads/Germinator/catkin_ws/devel/lib/python3/dist-packages/get_ar_pos/msg/__init__.py"
   "CMakeFiles/get_ar_pos_generate_messages_py"
 )
 

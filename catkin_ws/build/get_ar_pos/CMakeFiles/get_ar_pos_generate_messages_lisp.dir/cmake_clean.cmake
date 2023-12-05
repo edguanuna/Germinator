@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/germinator/Germinator/catkin_ws/devel/share/common-lisp/ros/get_ar_pos/msg/PointArray.lisp"
+  "/home/germinator/Downloads/Germinator/catkin_ws/devel/share/common-lisp/ros/get_ar_pos/msg/PointArray.lisp"
   "CMakeFiles/get_ar_pos_generate_messages_lisp"
 )
 

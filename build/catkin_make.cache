@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/germinator/Downloads/Germinator/devel -DCMAKE_INSTALL_PREFIX=/home/germinator/Downloads/Germinator/install -G Unix Makefiles

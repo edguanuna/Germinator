@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/germinator/Germinator/catkin_ws/devel/share/gennodejs/ros/get_ar_pos/msg/PointArray.js"
+  "/home/germinator/Downloads/Germinator/catkin_ws/devel/share/gennodejs/ros/get_ar_pos/msg/PointArray.js"
   "CMakeFiles/get_ar_pos_generate_messages_nodejs"
 )
 
