@@ -6,12 +6,12 @@ print("import")
 
 #Set pins from gpio
   #left
-in1 = 27
-in2 = 12
-enA = 13
-  #right
-in3 = 15
-in4 = 33
+in1 = 31
+in2 = 29
+enA = 33
+   #right
+in3 = 37
+in4 = 36
 enB = 32
 
 #Initialize motor controller

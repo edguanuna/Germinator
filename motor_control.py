@@ -14,12 +14,12 @@ print("import")
 def MotorControl(goal_x, goal_y, goal_yaw):
   #Set pins from gpio
     #left
-  in1 = 27
-  in2 = 12
-  enA = 13
+  in1 = 31
+  in2 = 29
+  enA = 33
     #right
-  in3 = 15
-  in4 = 33
+  in3 = 37
+  in4 = 36
   enB = 32
 
   #Initialize motor controller
