@@ -1,0 +1,46 @@
+Identify Large Files or Directories:
+
+Use the du command to identify large files or directories:
+bash
+Copy code
+sudo du -h --max-depth=1 /
+This command will display the disk usage of each directory in the root filesystem. Look for large directories that may contain unnecessary files.
+Clean Up Unnecessary Files:
+
+Remove temporary files, log files, or any files that are no longer needed. For example, you can use the find and rm commands:
+bash
+Copy code
+sudo find /var/log -type f -name "*.log" -delete
+Check Package Manager Cache:
+
+Package managers like apt store downloaded packages in a cache. You can clean the package manager cache using:
+bash
+Copy code
+sudo apt-get clean
+Remove Unnecessary Packages:
+
+Use the following command to remove packages that are no longer needed:
+bash
+Copy code
+sudo apt-get autoremove
+Check for Core Dumps:
+
+Check if there are core dump files in the root directory and remove them:
+bash
+Copy code
+sudo find / -name "core.*" -delete
+Resize Partitions (if applicable):
+
+Beautiful:
+https://wiki.ros.org/realsense_camera/Tutorials/Building_from_Sources
+jkkkkk
+
+https://github.com/IntelRealSense/realsense-ros/issues/395
+
+recent:https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages
+
+
+
+ENDDDD
+https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy
+just catkin_create_pkg

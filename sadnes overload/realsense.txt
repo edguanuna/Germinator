@@ -1,0 +1,11 @@
+https://jsk-docs.readthedocs.io/projects/jsk_recognition/en/latest/install_realsense_camera.html
+
+using catkin build
+
+
+jkkkk lol 
+
+
+used this
+https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy
+this is sourced with /opt....

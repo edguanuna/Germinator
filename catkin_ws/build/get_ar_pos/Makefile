@@ -124,17 +124,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/germinator/Germinator/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/germinator/Germinator/catkin_ws/build/CMakeFiles /home/germinator/Germinator/catkin_ws/build/get_ar_pos/CMakeFiles/progress.marks
@@ -196,6 +185,21 @@ get_ar_pos_generate_messages_eus: get_ar_pos/CMakeFiles/get_ar_pos_generate_mess
 get_ar_pos_generate_messages_eus/fast:
 	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_eus.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_eus.dir/build
 .PHONY : get_ar_pos_generate_messages_eus/fast
+
+# Convenience name for target.
+get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule:
+	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule
+.PHONY : get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule
+
+# Convenience name for target.
+get_ar_pos_gennodejs: get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule
+
+.PHONY : get_ar_pos_gennodejs
+
+# fast build rule for target.
+get_ar_pos_gennodejs/fast:
+	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/build
+.PHONY : get_ar_pos_gennodejs/fast
 
 # Convenience name for target.
 get_ar_pos/CMakeFiles/_get_ar_pos_generate_messages_check_deps_PointArray.dir/rule:
@@ -273,36 +277,6 @@ get_ar_pos_genlisp/fast:
 .PHONY : get_ar_pos_genlisp/fast
 
 # Convenience name for target.
-get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule:
-	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule
-.PHONY : get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-get_ar_pos_generate_messages_lisp: get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule
-
-.PHONY : get_ar_pos_generate_messages_lisp
-
-# fast build rule for target.
-get_ar_pos_generate_messages_lisp/fast:
-	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build
-.PHONY : get_ar_pos_generate_messages_lisp/fast
-
-# Convenience name for target.
-get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule:
-	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule
-.PHONY : get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule
-
-# Convenience name for target.
-get_ar_pos_generate_messages_py: get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule
-
-.PHONY : get_ar_pos_generate_messages_py
-
-# fast build rule for target.
-get_ar_pos_generate_messages_py/fast:
-	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build
-.PHONY : get_ar_pos_generate_messages_py/fast
-
-# Convenience name for target.
 get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_nodejs.dir/rule:
 	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_nodejs.dir/rule
 .PHONY : get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_nodejs.dir/rule
@@ -333,19 +307,34 @@ get_ar_pos_genpy/fast:
 .PHONY : get_ar_pos_genpy/fast
 
 # Convenience name for target.
-get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule:
-	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule
-.PHONY : get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule
+get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule:
+	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule
+.PHONY : get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-get_ar_pos_gennodejs: get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/rule
+get_ar_pos_generate_messages_lisp: get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/rule
 
-.PHONY : get_ar_pos_gennodejs
+.PHONY : get_ar_pos_generate_messages_lisp
 
 # fast build rule for target.
-get_ar_pos_gennodejs/fast:
-	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_gennodejs.dir/build
-.PHONY : get_ar_pos_gennodejs/fast
+get_ar_pos_generate_messages_lisp/fast:
+	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build
+.PHONY : get_ar_pos_generate_messages_lisp/fast
+
+# Convenience name for target.
+get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule:
+	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule
+.PHONY : get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule
+
+# Convenience name for target.
+get_ar_pos_generate_messages_py: get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/rule
+
+.PHONY : get_ar_pos_generate_messages_py
+
+# fast build rule for target.
+get_ar_pos_generate_messages_py/fast:
+	cd /home/germinator/Germinator/catkin_ws/build && $(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build
+.PHONY : get_ar_pos_generate_messages_py/fast
 
 # Help Target
 help:
@@ -359,19 +348,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... get_ar_pos_generate_messages"
 	@echo "... get_ar_pos_generate_messages_eus"
+	@echo "... get_ar_pos_gennodejs"
 	@echo "... _get_ar_pos_generate_messages_check_deps_PointArray"
 	@echo "... get_ar_pos_generate_messages_cpp"
 	@echo "... get_ar_pos_gencpp"
 	@echo "... get_ar_pos_geneus"
 	@echo "... get_ar_pos_genlisp"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... get_ar_pos_generate_messages_lisp"
-	@echo "... get_ar_pos_generate_messages_py"
 	@echo "... get_ar_pos_generate_messages_nodejs"
 	@echo "... get_ar_pos_genpy"
-	@echo "... get_ar_pos_gennodejs"
-	@echo "... test"
+	@echo "... rebuild_cache"
+	@echo "... get_ar_pos_generate_messages_lisp"
+	@echo "... get_ar_pos_generate_messages_py"
+	@echo "... edit_cache"
 .PHONY : help
 
 

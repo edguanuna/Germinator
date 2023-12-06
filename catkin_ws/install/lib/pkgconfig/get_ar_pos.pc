@@ -1,0 +1,8 @@
+prefix=/home/germinator/Germinator/catkin_ws/install
+
+Name: get_ar_pos
+Description: Description of get_ar_pos
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs rospy geometry_msgs message_runtime

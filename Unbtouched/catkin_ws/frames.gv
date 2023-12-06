@@ -1,0 +1,9 @@
+digraph G {
+"usb_cam" -> "ar_marker_1"[label=" Broadcaster: /ar_track_alvar\nAverage rate: 8.164\nBuffer length: 4.9\nMost recent transform: 1700646866.231\nOldest transform: 1700646861.331\n"];
+"usb_cam" -> "ar_marker_2"[label=" Broadcaster: /ar_track_alvar\nAverage rate: 8.164\nBuffer length: 4.9\nMost recent transform: 1700646866.231\nOldest transform: 1700646861.331\n"];
+"usb_cam" -> "ar_marker_3"[label=" Broadcaster: /ar_track_alvar\nAverage rate: 8.164\nBuffer length: 4.9\nMost recent transform: 1700646866.231\nOldest transform: 1700646861.331\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1700646866.3811448"[ shape=plaintext ] ;
+}->"usb_cam";
+}

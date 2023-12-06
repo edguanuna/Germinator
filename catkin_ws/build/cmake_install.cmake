@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -130,7 +130,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/germinator/Germinator/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/germinator/Germinator/catkin_ws/build/realsense-ros/realsense2_camera/cmake_install.cmake")
+  include("/home/germinator/Germinator/catkin_ws/build/realsense-ros/realsense2_description/cmake_install.cmake")
   include("/home/germinator/Germinator/catkin_ws/build/ar_track_alvar/ar_track_alvar_msgs/cmake_install.cmake")
   include("/home/germinator/Germinator/catkin_ws/build/get_ar_pos/cmake_install.cmake")
   include("/home/germinator/Germinator/catkin_ws/build/path_planning/cmake_install.cmake")

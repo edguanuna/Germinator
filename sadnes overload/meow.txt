@@ -1,0 +1,25 @@
+source /opt/ros/noetic/setup.bash
+
+
+
+
+https://stackoverflow.com/questions/75259481/i-cant-install-ar-track-alvar-on-ros-noetic
+https://varunagrawal.github.io/2017/10/23/ar-track/
+sudo apt-get install ros-noetic-usb-cam
+
+
+
+Cameras:
+    roslaunch usb_cam usb_cam-test.launch
+    
+rosrun camera_calibration cameracalibrator.py --size 7x5 --square 0.026 image:=/usb_cam/image_raw camera:=/usb_cam
+
+
+Markers
+rostopic echo /ar_pose_marker 
+
+view frames
+sudo apt-get install ros-${ROS_DISTRO}-tf2-ros
+sudo apt-get install ros-${ROS_DISTRO}-tf2-tools
+rosrun tf2_tools view_frames.py
+
