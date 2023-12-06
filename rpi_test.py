@@ -11,23 +11,24 @@ enA = 33
 # right
 in3 = 37
 in4 = 36
-enB = 32
+# enB = 32
 
 # Initialize motor controller
 frequency = 15000
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup([in1, in2, in3, in4, enA, enB], GPIO.OUT)
+GPIO.setup([in1, in2, in3, in4, enA], GPIO.OUT)
 
 pwmA = GPIO.PWM(enA, frequency)
-pwmB = GPIO.PWM(enB, frequency)
+# pwmB = GPIO.PWM(enB, frequency)
 pwmA.start(0)
-pwmB.start(0)
+# pwmB.start(0)
 
 def set_speed(motor, speed):
-    if motor == "A":
-        pwmA.ChangeDutyCycle(speed)
-    elif motor == "B":
-        pwmB.ChangeDutyCycle(speed)
+    # if motor == "A":
+    #     pwmA.ChangeDutyCycle(speed)
+    # elif motor == "B":
+    #     pwmB.ChangeDutyCycle(speed)
+    pwmA.ChangeDutyCycle(speed)
 
 def forward(motor, speed):
     if motor == "A":
@@ -57,7 +58,8 @@ def stop(motor):
     elif motor == "B":
         GPIO.output(in3, GPIO.LOW)
         GPIO.output(in4, GPIO.LOW)
-        pwmB.ChangeDutyCycle(0)
+        # pwmB.ChangeDutyCycle(0)
+        pwmA.ChangeDutyCycle(0)
 
 # Test each motor
 print("left test")
