@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/germinator/Downloads/Germinator/catkin_ws/build/get_ar_pos/cmake_install.cmake")
   include("/home/germinator/Downloads/Germinator/catkin_ws/build/path_planning/cmake_install.cmake")
   include("/home/germinator/Downloads/Germinator/catkin_ws/build/sad/cmake_install.cmake")
+  include("/home/germinator/Downloads/Germinator/catkin_ws/build/usb_cam/cmake_install.cmake")
 
 endif()
 

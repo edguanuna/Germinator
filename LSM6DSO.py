@@ -1,22 +1,24 @@
+#!/usr/bin/env python
 # LSM6DSO 3D accelerometer and 3D gyroscope seneor micropython drive
 # ver: 1.0
 # License: MIT
 # Author: shaoziyang (shaoziyang@micropython.org.cn)
 # v1.0 2019.7
 
-LSM6DSO_CTRL1_XL = const(0x10)
-LSM6DSO_CTRL2_G = const(0x11)
-LSM6DSO_CTRL3_C = const(0x12)
-LSM6DSO_CTRL6_C = const(0x15)
-LSM6DSO_CTRL8_XL = const(0x17)
-LSM6DSO_STATUS = const(0x1E)
-LSM6DSO_OUT_TEMP_L = const(0x20)
-LSM6DSO_OUTX_L_G = const(0x22)
-LSM6DSO_OUTY_L_G = const(0x24)
-LSM6DSO_OUTZ_L_G = const(0x26)
-LSM6DSO_OUTX_L_A = const(0x28)
-LSM6DSO_OUTY_L_A = const(0x2A)
-LSM6DSO_OUTZ_L_A = const(0x2C)
+
+LSM6DSO_CTRL1_XL = (0x10)
+LSM6DSO_CTRL2_G = (0x11)
+LSM6DSO_CTRL3_C = (0x12)
+LSM6DSO_CTRL6_C = (0x15)
+LSM6DSO_CTRL8_XL = (0x17)
+LSM6DSO_STATUS = (0x1E)
+LSM6DSO_OUT_TEMP_L = (0x20)
+LSM6DSO_OUTX_L_G = (0x22)
+LSM6DSO_OUTY_L_G = (0x24)
+LSM6DSO_OUTZ_L_G = (0x26)
+LSM6DSO_OUTX_L_A = (0x28)
+LSM6DSO_OUTY_L_A = (0x2A)
+LSM6DSO_OUTZ_L_A = (0x2C)
 
 LSM6DSO_SCALEA = ('2g', '16g', '4g', '8g')
 LSM6DSO_SCALEG = ('250', '125', '500', '', '1000', '', '2000')
@@ -47,16 +49,19 @@ class LSM6DSO():
         self.scale_a('2g')
         self.scale_g('125')
 
+    def meow(self):
+        print(self.int16(self.get2reg(0x28)))
+        print(self.int16(self.get2reg(0x2A)))
+        print(self.int16(self.get2reg(0x2C)))
+        return None
     def int16(self, d):
         return d if d < 0x8000 else d - 0x10000
 
     def setreg(self, reg, dat):
-        self.tb[0] = dat
-        self.i2c.writeto_mem(self.addr, reg, self.tb)
+        self.i2c.write_i2c_block_data(self.addr, reg, [dat])
 
     def getreg(self, reg):
-        self.i2c.readfrom_mem_into(self.addr, reg, self.rb)
-        return self.rb[0]
+        return self.i2c.read_i2c_block_data(self.addr, reg, 1)[0]
 
     def get2reg(self, reg):
         return self.getreg(reg) + self.getreg(reg+1) * 256
@@ -139,7 +144,7 @@ class LSM6DSO():
 
     def get(self):
         self.get_a_raw()
-        self.get_g_raw()
+        self.get_g()
         return self.irq_v
 
     def temperature(self):
