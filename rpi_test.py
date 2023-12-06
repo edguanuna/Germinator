@@ -15,6 +15,7 @@ in1 = 6
 in2 = 5
 enA = 13
 # right
+<<<<<<< HEAD
 in3 = 26
 in4 = 16
 enB = 12
@@ -28,9 +29,25 @@ pwmA.start(0) # initialize duty cycle to 0%
 # duty_cycle = 50
 # pwmA.ChangeDutyCycle(duty_cycle)
 pwmB.start(0)
+=======
+in3 = 37
+in4 = 36
+# enB = 32
+
+# Initialize motor controller
+frequency = 15000
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup([in1, in2, in3, in4, enA], GPIO.OUT)
+
+pwmA = GPIO.PWM(enA, frequency)
+# pwmB = GPIO.PWM(enB, frequency)
+pwmA.start(0)
+# pwmB.start(0)
+>>>>>>> bb709e8bb9d6c7980889cdb28d5f3a95e407e729
 
 
 def set_speed(motor, speed):
+<<<<<<< HEAD
     print("going through set speed function")
     print("motor", motor)
     if motor == "A":
@@ -38,6 +55,13 @@ def set_speed(motor, speed):
         pwmA.ChangeDutyCycle(speed)
     elif motor == "B":
         pwmB.ChangeDutyCycle(speed)
+=======
+    # if motor == "A":
+    #     pwmA.ChangeDutyCycle(speed)
+    # elif motor == "B":
+    #     pwmB.ChangeDutyCycle(speed)
+    pwmA.ChangeDutyCycle(speed)
+>>>>>>> bb709e8bb9d6c7980889cdb28d5f3a95e407e729
 
 def forward(motor, speed):
     print("going through forward function")
@@ -68,7 +92,8 @@ def stop(motor):
     elif motor == "B":
         GPIO.output(in3, GPIO.LOW)
         GPIO.output(in4, GPIO.LOW)
-        pwmB.ChangeDutyCycle(0)
+        # pwmB.ChangeDutyCycle(0)
+        pwmA.ChangeDutyCycle(0)
 
 def turn_left(speed, time):
     forward("A", speed)
