@@ -29,6 +29,23 @@ pwmA.start(0) # initialize duty cycle to 0%
 # pwmA.ChangeDutyCycle(duty_cycle)
 pwmB.start(0)
 
+# current accelerations
+curr_ax = 
+curr_ay = 
+
+# current velocities
+curr_vx = 
+curr_vy = 
+
+# current positions
+curr_x = 
+curr_y = 
+
+
+# set goal x, y, and yaw
+goal_x =
+goal_y = 
+goal_yaw = 
 
 def set_speed(motor, speed):
     print("going through set speed function")
