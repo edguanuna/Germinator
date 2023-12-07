@@ -12,7 +12,8 @@ import time
 import tf
 from geometry_msgs.msg import Point, PointStamped
 from std_msgs.msg import Header
-# from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
 
 
 PLOTS_DIR = os.path.join(os.getcwd(), 'plots')
@@ -103,19 +104,47 @@ class ObjectDetector:
             return
 
         # Calculate the center of the detected region by 
-        center_x = int(np.mean(x_coords))
-        center_y = int(np.mean(y_coords))
+        coordinates = np.column_stack((x_coords, y_coords))
+        num_objects = 4
+        kmeans = KMeans(n_clusters=num_objects, random_state=0).fit(coordinates)
+        labels = kmeans.labels_
 
-        # Fetch the depth value at the center
-        depth = self.cv_depth_image[center_y, center_x]
+        # PLOTS
+        plt.figure(figsize=(12, 6))
+        plt.subplot(1, 2, 1)
+        plt.imshow(cv2.cvtColor(self.cv_color_image, cv2.COLOR_BGR2RGB))
+        plt.title('Original Image')
 
-        if self.fx and self.fy and self.cx and self.cy:
-            camera_x, camera_y, camera_z = self.pixel_to_point(center_x, center_y, depth)
-            camera_link_x, camera_link_y, camera_link_z = camera_z, -camera_x, -camera_y
-            # Convert from mm to m
-            camera_link_x /= 1000
-            camera_link_y /= 1000
-            camera_link_z /= 1000
+        for i in range(num_objects):
+            object_coords = coordinates[labels == i]
+            
+            if len(object_coords) == 0:
+                print('meow')
+                continue
+            plt.scatter(object_coords[:, 0], object_coords[:, 1], label=f'Object {i+1}', s=50, alpha = 0.8)
+
+        plt.legend()
+        plt.title('Detected Objects')
+
+        plt.show()
+
+        for i in range(num_objects):
+            object_coords = coordinates[labels == i]
+            if len(object_coords) == 0:
+                continue
+
+            object_center = np.mean(object_coords, axis=0)
+            object_center_x, object_center_y = int(object_center[0]), int(object_center[1])
+            # Fetch the depth value at the center
+            depth = self.cv_depth_image[object_center_y, object_center_x]
+
+        # if self.fx and self.fy and self.cx and self.cy:
+        #     camera_x, camera_y, camera_z = self.pixel_to_point(center_x, center_y, depth)
+        #     camera_link_x, camera_link_y, camera_link_z = camera_z, -camera_x, -camera_y
+        #     # Convert from mm to m
+        #     camera_link_x /= 1000
+        #     camera_link_y /= 1000
+        #     camera_link_z /= 1000
 
             # Convert the (X, Y, Z) coordinates from camera frame to odom frame
             # try:
