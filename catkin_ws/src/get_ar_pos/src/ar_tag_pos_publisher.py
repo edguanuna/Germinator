@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import rospy
 import tf2_ros
 from ar_track_alvar_msgs.msg import AlvarMarkers
