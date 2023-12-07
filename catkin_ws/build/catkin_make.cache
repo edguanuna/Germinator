@@ -1,2 +1,2 @@
-ar_tag_toolbox:ar_track_alvar/ar_track_alvar:ar_track_alvar/ar_track_alvar_msgs:get_ar_pos:path_planning:sad:usb_cam
+ar_tag_toolbox:ar_track_alvar/ar_track_alvar:ar_track_alvar/ar_track_alvar_msgs:get_ar_pos:path_planning:perception:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:sad:usb_cam
 -DCATKIN_DEVEL_PREFIX=/home/germinator/Germinator/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/germinator/Germinator/catkin_ws/install -G Unix Makefiles
