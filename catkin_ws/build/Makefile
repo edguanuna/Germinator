@@ -2716,6 +2716,162 @@ realsense2_camera/fast:
 .PHONY : realsense2_camera/fast
 
 #=============================================================================
+# Target rules for targets named _perception_generate_messages_check_deps_CentroidsArray
+
+# Build rule for target.
+_perception_generate_messages_check_deps_CentroidsArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _perception_generate_messages_check_deps_CentroidsArray
+.PHONY : _perception_generate_messages_check_deps_CentroidsArray
+
+# fast build rule for target.
+_perception_generate_messages_check_deps_CentroidsArray/fast:
+	$(MAKE) -f perception/CMakeFiles/_perception_generate_messages_check_deps_CentroidsArray.dir/build.make perception/CMakeFiles/_perception_generate_messages_check_deps_CentroidsArray.dir/build
+.PHONY : _perception_generate_messages_check_deps_CentroidsArray/fast
+
+#=============================================================================
+# Target rules for targets named perception_generate_messages_cpp
+
+# Build rule for target.
+perception_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_generate_messages_cpp
+.PHONY : perception_generate_messages_cpp
+
+# fast build rule for target.
+perception_generate_messages_cpp/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_generate_messages_cpp.dir/build.make perception/CMakeFiles/perception_generate_messages_cpp.dir/build
+.PHONY : perception_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named perception_gencpp
+
+# Build rule for target.
+perception_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_gencpp
+.PHONY : perception_gencpp
+
+# fast build rule for target.
+perception_gencpp/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_gencpp.dir/build.make perception/CMakeFiles/perception_gencpp.dir/build
+.PHONY : perception_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named perception_geneus
+
+# Build rule for target.
+perception_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_geneus
+.PHONY : perception_geneus
+
+# fast build rule for target.
+perception_geneus/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_geneus.dir/build.make perception/CMakeFiles/perception_geneus.dir/build
+.PHONY : perception_geneus/fast
+
+#=============================================================================
+# Target rules for targets named perception_gennodejs
+
+# Build rule for target.
+perception_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_gennodejs
+.PHONY : perception_gennodejs
+
+# fast build rule for target.
+perception_gennodejs/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_gennodejs.dir/build.make perception/CMakeFiles/perception_gennodejs.dir/build
+.PHONY : perception_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named perception_generate_messages_eus
+
+# Build rule for target.
+perception_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_generate_messages_eus
+.PHONY : perception_generate_messages_eus
+
+# fast build rule for target.
+perception_generate_messages_eus/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_generate_messages_eus.dir/build.make perception/CMakeFiles/perception_generate_messages_eus.dir/build
+.PHONY : perception_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named perception_generate_messages_lisp
+
+# Build rule for target.
+perception_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_generate_messages_lisp
+.PHONY : perception_generate_messages_lisp
+
+# fast build rule for target.
+perception_generate_messages_lisp/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_generate_messages_lisp.dir/build.make perception/CMakeFiles/perception_generate_messages_lisp.dir/build
+.PHONY : perception_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named perception_genlisp
+
+# Build rule for target.
+perception_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_genlisp
+.PHONY : perception_genlisp
+
+# fast build rule for target.
+perception_genlisp/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_genlisp.dir/build.make perception/CMakeFiles/perception_genlisp.dir/build
+.PHONY : perception_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named perception_generate_messages_nodejs
+
+# Build rule for target.
+perception_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_generate_messages_nodejs
+.PHONY : perception_generate_messages_nodejs
+
+# fast build rule for target.
+perception_generate_messages_nodejs/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_generate_messages_nodejs.dir/build.make perception/CMakeFiles/perception_generate_messages_nodejs.dir/build
+.PHONY : perception_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named perception_generate_messages
+
+# Build rule for target.
+perception_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_generate_messages
+.PHONY : perception_generate_messages
+
+# fast build rule for target.
+perception_generate_messages/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_generate_messages.dir/build.make perception/CMakeFiles/perception_generate_messages.dir/build
+.PHONY : perception_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named perception_generate_messages_py
+
+# Build rule for target.
+perception_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_generate_messages_py
+.PHONY : perception_generate_messages_py
+
+# fast build rule for target.
+perception_generate_messages_py/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_generate_messages_py.dir/build.make perception/CMakeFiles/perception_generate_messages_py.dir/build
+.PHONY : perception_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named perception_genpy
+
+# Build rule for target.
+perception_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perception_genpy
+.PHONY : perception_genpy
+
+# fast build rule for target.
+perception_genpy/fast:
+	$(MAKE) -f perception/CMakeFiles/perception_genpy.dir/build.make perception/CMakeFiles/perception_genpy.dir/build
+.PHONY : perception_genpy/fast
+
+#=============================================================================
 # Target rules for targets named usb_cam_node
 
 # Build rule for target.
@@ -2963,6 +3119,18 @@ help:
 	@echo "... realsense2_camera_generate_messages_nodejs"
 	@echo "... realsense2_camera_gennodejs"
 	@echo "... realsense2_camera"
+	@echo "... _perception_generate_messages_check_deps_CentroidsArray"
+	@echo "... perception_generate_messages_cpp"
+	@echo "... perception_gencpp"
+	@echo "... perception_geneus"
+	@echo "... perception_gennodejs"
+	@echo "... perception_generate_messages_eus"
+	@echo "... perception_generate_messages_lisp"
+	@echo "... perception_genlisp"
+	@echo "... perception_generate_messages_nodejs"
+	@echo "... perception_generate_messages"
+	@echo "... perception_generate_messages_py"
+	@echo "... perception_genpy"
 	@echo "... usb_cam_node"
 	@echo "... usb_cam"
 	@echo "... v4l_driver"

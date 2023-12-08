@@ -3,6 +3,6 @@ prefix=/home/germinator/Germinator/catkin_ws/install
 Name: perception
 Description: Description of perception
 Version: 0.0.0
-Cflags: 
+Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: cv_bridge geometry_msgs rospy sensor_msgs std_msgs tf2_geometry_msgs tf2_ros message_runtime
