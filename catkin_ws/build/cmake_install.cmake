@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/germinator/Downloads/Germinator/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/germinator/Downloads/Germinator/catkin_ws/build/encoder/cmake_install.cmake")
   include("/home/germinator/Downloads/Germinator/catkin_ws/build/get_ar_pos/cmake_install.cmake")
   include("/home/germinator/Downloads/Germinator/catkin_ws/build/path_planning/cmake_install.cmake")
   include("/home/germinator/Downloads/Germinator/catkin_ws/build/sad/cmake_install.cmake")

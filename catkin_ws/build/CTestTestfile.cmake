@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("encoder")
 subdirs("get_ar_pos")
 subdirs("path_planning")
 subdirs("sad")

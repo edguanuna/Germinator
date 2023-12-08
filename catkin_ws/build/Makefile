@@ -285,6 +285,227 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named encoder_generate_messages_py
+
+# Build rule for target.
+encoder_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_generate_messages_py
+.PHONY : encoder_generate_messages_py
+
+# fast build rule for target.
+encoder_generate_messages_py/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_generate_messages_py.dir/build.make encoder/CMakeFiles/encoder_generate_messages_py.dir/build
+.PHONY : encoder_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named encoder_gennodejs
+
+# Build rule for target.
+encoder_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_gennodejs
+.PHONY : encoder_gennodejs
+
+# fast build rule for target.
+encoder_gennodejs/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_gennodejs.dir/build.make encoder/CMakeFiles/encoder_gennodejs.dir/build
+.PHONY : encoder_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f encoder/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make encoder/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named encoder_generate_messages
+
+# Build rule for target.
+encoder_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_generate_messages
+.PHONY : encoder_generate_messages
+
+# fast build rule for target.
+encoder_generate_messages/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_generate_messages.dir/build.make encoder/CMakeFiles/encoder_generate_messages.dir/build
+.PHONY : encoder_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _encoder_generate_messages_check_deps_TimeDist
+
+# Build rule for target.
+_encoder_generate_messages_check_deps_TimeDist: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _encoder_generate_messages_check_deps_TimeDist
+.PHONY : _encoder_generate_messages_check_deps_TimeDist
+
+# fast build rule for target.
+_encoder_generate_messages_check_deps_TimeDist/fast:
+	$(MAKE) -f encoder/CMakeFiles/_encoder_generate_messages_check_deps_TimeDist.dir/build.make encoder/CMakeFiles/_encoder_generate_messages_check_deps_TimeDist.dir/build
+.PHONY : _encoder_generate_messages_check_deps_TimeDist/fast
+
+#=============================================================================
+# Target rules for targets named encoder_genpy
+
+# Build rule for target.
+encoder_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_genpy
+.PHONY : encoder_genpy
+
+# fast build rule for target.
+encoder_genpy/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_genpy.dir/build.make encoder/CMakeFiles/encoder_genpy.dir/build
+.PHONY : encoder_genpy/fast
+
+#=============================================================================
+# Target rules for targets named encoder_generate_messages_cpp
+
+# Build rule for target.
+encoder_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_generate_messages_cpp
+.PHONY : encoder_generate_messages_cpp
+
+# fast build rule for target.
+encoder_generate_messages_cpp/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_generate_messages_cpp.dir/build.make encoder/CMakeFiles/encoder_generate_messages_cpp.dir/build
+.PHONY : encoder_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f encoder/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make encoder/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f encoder/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make encoder/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named encoder_generate_messages_nodejs
+
+# Build rule for target.
+encoder_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_generate_messages_nodejs
+.PHONY : encoder_generate_messages_nodejs
+
+# fast build rule for target.
+encoder_generate_messages_nodejs/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_generate_messages_nodejs.dir/build.make encoder/CMakeFiles/encoder_generate_messages_nodejs.dir/build
+.PHONY : encoder_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f encoder/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make encoder/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named encoder_gencpp
+
+# Build rule for target.
+encoder_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_gencpp
+.PHONY : encoder_gencpp
+
+# fast build rule for target.
+encoder_gencpp/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_gencpp.dir/build.make encoder/CMakeFiles/encoder_gencpp.dir/build
+.PHONY : encoder_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named encoder_geneus
+
+# Build rule for target.
+encoder_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_geneus
+.PHONY : encoder_geneus
+
+# fast build rule for target.
+encoder_geneus/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_geneus.dir/build.make encoder/CMakeFiles/encoder_geneus.dir/build
+.PHONY : encoder_geneus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f encoder/CMakeFiles/std_msgs_generate_messages_py.dir/build.make encoder/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named encoder_generate_messages_eus
+
+# Build rule for target.
+encoder_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_generate_messages_eus
+.PHONY : encoder_generate_messages_eus
+
+# fast build rule for target.
+encoder_generate_messages_eus/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_generate_messages_eus.dir/build.make encoder/CMakeFiles/encoder_generate_messages_eus.dir/build
+.PHONY : encoder_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named encoder_genlisp
+
+# Build rule for target.
+encoder_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_genlisp
+.PHONY : encoder_genlisp
+
+# fast build rule for target.
+encoder_genlisp/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_genlisp.dir/build.make encoder/CMakeFiles/encoder_genlisp.dir/build
+.PHONY : encoder_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named encoder_generate_messages_lisp
+
+# Build rule for target.
+encoder_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoder_generate_messages_lisp
+.PHONY : encoder_generate_messages_lisp
+
+# fast build rule for target.
+encoder_generate_messages_lisp/fast:
+	$(MAKE) -f encoder/CMakeFiles/encoder_generate_messages_lisp.dir/build.make encoder/CMakeFiles/encoder_generate_messages_lisp.dir/build
+.PHONY : encoder_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named get_ar_pos_genpy
 
 # Build rule for target.
@@ -324,45 +545,6 @@ get_ar_pos_generate_messages_nodejs/fast:
 .PHONY : get_ar_pos_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named get_ar_pos_genlisp
-
-# Build rule for target.
-get_ar_pos_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_genlisp
-.PHONY : get_ar_pos_genlisp
-
-# fast build rule for target.
-get_ar_pos_genlisp/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_genlisp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_genlisp.dir/build
-.PHONY : get_ar_pos_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named get_ar_pos_generate_messages_py
-
-# Build rule for target.
-get_ar_pos_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_generate_messages_py
-.PHONY : get_ar_pos_generate_messages_py
-
-# fast build rule for target.
-get_ar_pos_generate_messages_py/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build
-.PHONY : get_ar_pos_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named get_ar_pos_generate_messages_lisp
-
-# Build rule for target.
-get_ar_pos_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_generate_messages_lisp
-.PHONY : get_ar_pos_generate_messages_lisp
-
-# fast build rule for target.
-get_ar_pos_generate_messages_lisp/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build
-.PHONY : get_ar_pos_generate_messages_lisp/fast
-
-#=============================================================================
 # Target rules for targets named get_ar_pos_geneus
 
 # Build rule for target.
@@ -376,32 +558,6 @@ get_ar_pos_geneus/fast:
 .PHONY : get_ar_pos_geneus/fast
 
 #=============================================================================
-# Target rules for targets named get_ar_pos_generate_messages_eus
-
-# Build rule for target.
-get_ar_pos_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_generate_messages_eus
-.PHONY : get_ar_pos_generate_messages_eus
-
-# fast build rule for target.
-get_ar_pos_generate_messages_eus/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_eus.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_eus.dir/build
-.PHONY : get_ar_pos_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named get_ar_pos_gencpp
-
-# Build rule for target.
-get_ar_pos_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_gencpp
-.PHONY : get_ar_pos_gencpp
-
-# fast build rule for target.
-get_ar_pos_gencpp/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_gencpp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_gencpp.dir/build
-.PHONY : get_ar_pos_gencpp/fast
-
-#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -413,6 +569,19 @@ geometry_msgs_generate_messages_eus: cmake_check_build_system
 geometry_msgs_generate_messages_eus/fast:
 	$(MAKE) -f get_ar_pos/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make get_ar_pos/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f get_ar_pos/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make get_ar_pos/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
@@ -454,71 +623,6 @@ geometry_msgs_generate_messages_nodejs/fast:
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
-
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make get_ar_pos/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
-
-# Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make get_ar_pos/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
-
-# Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make get_ar_pos/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make get_ar_pos/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/std_msgs_generate_messages_py.dir/build.make get_ar_pos/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named get_ar_pos_generate_messages
 
 # Build rule for target.
@@ -532,17 +636,17 @@ get_ar_pos_generate_messages/fast:
 .PHONY : get_ar_pos_generate_messages/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_nodejs
+# Target rules for targets named get_ar_pos_generate_messages_eus
 
 # Build rule for target.
-std_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
-.PHONY : std_msgs_generate_messages_nodejs
+get_ar_pos_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_generate_messages_eus
+.PHONY : get_ar_pos_generate_messages_eus
 
 # fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f get_ar_pos/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make get_ar_pos/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
+get_ar_pos_generate_messages_eus/fast:
+	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_eus.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_eus.dir/build
+.PHONY : get_ar_pos_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named _get_ar_pos_generate_messages_check_deps_PointArray
@@ -569,6 +673,58 @@ get_ar_pos_generate_messages_cpp: cmake_check_build_system
 get_ar_pos_generate_messages_cpp/fast:
 	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_cpp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_cpp.dir/build
 .PHONY : get_ar_pos_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named get_ar_pos_gencpp
+
+# Build rule for target.
+get_ar_pos_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_gencpp
+.PHONY : get_ar_pos_gencpp
+
+# fast build rule for target.
+get_ar_pos_gencpp/fast:
+	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_gencpp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_gencpp.dir/build
+.PHONY : get_ar_pos_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named get_ar_pos_generate_messages_py
+
+# Build rule for target.
+get_ar_pos_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_generate_messages_py
+.PHONY : get_ar_pos_generate_messages_py
+
+# fast build rule for target.
+get_ar_pos_generate_messages_py/fast:
+	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_py.dir/build
+.PHONY : get_ar_pos_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named get_ar_pos_generate_messages_lisp
+
+# Build rule for target.
+get_ar_pos_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_generate_messages_lisp
+.PHONY : get_ar_pos_generate_messages_lisp
+
+# fast build rule for target.
+get_ar_pos_generate_messages_lisp/fast:
+	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_generate_messages_lisp.dir/build
+.PHONY : get_ar_pos_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named get_ar_pos_genlisp
+
+# Build rule for target.
+get_ar_pos_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_ar_pos_genlisp
+.PHONY : get_ar_pos_genlisp
+
+# fast build rule for target.
+get_ar_pos_genlisp/fast:
+	$(MAKE) -f get_ar_pos/CMakeFiles/get_ar_pos_genlisp.dir/build.make get_ar_pos/CMakeFiles/get_ar_pos_genlisp.dir/build
+.PHONY : get_ar_pos_genlisp/fast
 
 #=============================================================================
 # Target rules for targets named sad_genpy
@@ -1047,28 +1203,40 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... encoder_generate_messages_py"
+	@echo "... encoder_gennodejs"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... encoder_generate_messages"
+	@echo "... _encoder_generate_messages_check_deps_TimeDist"
+	@echo "... encoder_genpy"
+	@echo "... encoder_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... encoder_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... encoder_gencpp"
+	@echo "... encoder_geneus"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... encoder_generate_messages_eus"
+	@echo "... encoder_genlisp"
+	@echo "... encoder_generate_messages_lisp"
 	@echo "... get_ar_pos_genpy"
 	@echo "... get_ar_pos_gennodejs"
 	@echo "... get_ar_pos_generate_messages_nodejs"
-	@echo "... get_ar_pos_genlisp"
-	@echo "... get_ar_pos_generate_messages_py"
-	@echo "... get_ar_pos_generate_messages_lisp"
 	@echo "... get_ar_pos_geneus"
-	@echo "... get_ar_pos_generate_messages_eus"
-	@echo "... get_ar_pos_gencpp"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... get_ar_pos_generate_messages"
-	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... get_ar_pos_generate_messages_eus"
 	@echo "... _get_ar_pos_generate_messages_check_deps_PointArray"
 	@echo "... get_ar_pos_generate_messages_cpp"
+	@echo "... get_ar_pos_gencpp"
+	@echo "... get_ar_pos_generate_messages_py"
+	@echo "... get_ar_pos_generate_messages_lisp"
+	@echo "... get_ar_pos_genlisp"
 	@echo "... sad_genpy"
 	@echo "... sad_generate_messages_py"
 	@echo "... sad_generate_messages_nodejs"

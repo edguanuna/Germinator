@@ -1,2 +1,2 @@
-get_ar_pos:path_planning:sad:usb_cam
+encoder:get_ar_pos:path_planning:sad:usb_cam
 -DCATKIN_DEVEL_PREFIX=/home/germinator/Downloads/Germinator/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/germinator/Downloads/Germinator/catkin_ws/install -G Unix Makefiles

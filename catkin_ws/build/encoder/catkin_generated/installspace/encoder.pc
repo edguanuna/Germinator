@@ -1,0 +1,8 @@
+prefix=/home/germinator/Downloads/Germinator/catkin_ws/install
+
+Name: encoder
+Description: Description of encoder
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs rospy message_runtime
