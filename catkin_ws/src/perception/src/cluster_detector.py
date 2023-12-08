@@ -147,10 +147,10 @@ class ObjectDetector:
             centroids.append([object_center_x,object_center_y, depth])
         print(centroids)
 
-        plt.legend()
+        # plt.legend()
         plt.title('Detected Objects')
 
-        # plt.show()
+        plt.show()
 
         if self.fx and self.fy and self.cx and self.cy:
             camera_x, camera_y, camera_z = self.pixel_to_point(object_center_x, object_center_y, depth)
@@ -161,36 +161,29 @@ class ObjectDetector:
             camera_link_z /= 1000
 
         # Convert the (X, Y, Z) coordinates from camera frame to odom frame
-        try:
-            self.tf_listener.waitForTransform("/ar_marker_2", "/camera_link", rospy.Time(), rospy.Duration(10.0))
-            point_odom = self.tf_listener.transformPoint("/ar_marker_2", PointStamped(header=Header(stamp=rospy.Time(), frame_id="/camera_link"), point=Point(camera_link_x, camera_link_y, camera_link_z)))
-            X_odom, Y_odom, Z_odom = point_odom.point.x, point_odom.point.y, point_odom.point.z
-            print("Real-world coordinates in ar_marker_2 frame: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(X_odom, Y_odom, Z_odom))
+        for index in range(len(centroids)):
+            print(index)
+            try:
+                self.tf_listener.waitForTransform("/ar_marker_2", "/camera_link", rospy.Time(), rospy.Duration(10.0))
+                point_odom = self.tf_listener.transformPoint("/ar_marker_2", PointStamped(header=Header(stamp=rospy.Time(), frame_id="/camera_link"), point=Point(camera_link_x, camera_link_y, camera_link_z)))
+                X_odom, Y_odom, Z_odom = point_odom.point.x, point_odom.point.y, point_odom.point.z
+                print("Real-world coordinates in ar_marker_2 frame: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(X_odom, Y_odom, Z_odom))
 
-            centroid_msg = PointStamped(
-                header = Header(stamp=rospy.Time.now(), frame_id="/ar_marker_2"),
-                point=Point(X_odom, Y_odom, Z_odom)
-                )
-
-            # self.centroids_pub.publish(centroid_msg)
-            # if X_odom < 0.001 and X_odom > -0.001:
-            #     print("Erroneous goal point, not publishing - Is the cup too close to the camera?")
-            # else:
-            #     print("Pub`-lishing goal point: ", X_odom, Y_odom, Z_odom)
-            #     # Publish the transformed point
-            #     self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
-
-            #     # Overlay cup points on color image for visualization
-            #     cup_img = self.cv_color_image.copy()
-            #     cup_img[y_coords, x_coords] = [0, 0, 255]  # Highlight cup points in red
-            #     cv2.circle(cup_img, (center_x, center_y), 5, [0, 255, 0], -1)  # Draw green circle at center
-                
-            #     # Convert to ROS Image message and publish
-            #     ros_image = self.bridge.cv2_to_imgmsg(cup_img, "bgr8")
-            #     self.image_pub.publish(ros_image)
-        except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException) as e:
-            print("TF Error: " + e)
-            return
+                centroid_msg = PointStamped(
+                    header = Header(stamp=rospy.Time.now(), frame_id="/ar_marker_2"),
+                    point=Point(X_odom, Y_odom, Z_odom)
+                    )
+                print(centroid_msg)
+                self.centroids_pub.publish(centroid_msg)
+                # if X_odom < 0.001 and X_odom > -0.001:
+                #     print("Erroneous goal point, not publishing - Is the cup too close to the camera?")
+                # else:
+                #     print("Pub`-lishing goal point: ", X_odom, Y_odom, Z_odom)
+                #     # Publish the transformed point
+                #     self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
+            except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException) as e:
+                print("TF Error: " + e)
+                return
 
 if __name__ == '__main__':
     ObjectDetector()

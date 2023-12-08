@@ -16,7 +16,7 @@ class PlanPath:
         rate = rospy.Rate(1)
         rate.sleep()
         #print('grrrrr')
-        plot_trajectory(self.path, 50)
+        plot_trajectory(self.path, 75)
         #print('wwwwww')
         
         
@@ -38,7 +38,7 @@ class PlanPath:
         print("Order is:")
         print(order)
         optimized_targets = self.recover_targets(targets, order)
-        interval = 50
+        interval = 75
         self.path = get_trajectory(optimized_targets, interval)
         
         

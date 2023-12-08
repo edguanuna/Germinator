@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/germinator/Germinator/catkin_ws/build
 include sad/CMakeFiles/_sad_generate_messages_check_deps_ImageSrv.dir/progress.make
 
 sad/CMakeFiles/_sad_generate_messages_check_deps_ImageSrv:
-	cd /home/germinator/Germinator/catkin_ws/build/sad && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sad /home/germinator/Germinator/catkin_ws/src/sad/srv/ImageSrv.srv std_msgs/Header:sensor_msgs/Image
+	cd /home/germinator/Germinator/catkin_ws/build/sad && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sad /home/germinator/Germinator/catkin_ws/src/sad/srv/ImageSrv.srv sensor_msgs/Image:std_msgs/Header
 
 _sad_generate_messages_check_deps_ImageSrv: sad/CMakeFiles/_sad_generate_messages_check_deps_ImageSrv
 _sad_generate_messages_check_deps_ImageSrv: sad/CMakeFiles/_sad_generate_messages_check_deps_ImageSrv.dir/build.make
